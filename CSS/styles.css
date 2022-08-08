@@ -41,6 +41,17 @@ body{
 section{
     padding:2rem 7%;
 }
+.heading{
+    text-align: center;
+    color:var(--white-color);
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
 .btn{
     margin-top:1rem;
     display: inline-block;
@@ -198,6 +209,74 @@ header .search-form.active{
     padding: 1rem 0;
     color: #eee;
 }
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black-color);
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width:100%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:var(--white-color);
+}
+.about .row .content p{
+    color:#ccc;
+    font-size: 1.6rem;
+    padding:1rem;
+    line-height: 1.8;
+
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+.menu .box-container .box img{
+    height:10rem;
+}
+.menu .box-container .box h3{
+    color:var(--white-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color:var(--white-color);
+    font-size: 2.5rem;
+    padding:5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.menu .box-container .box:hover{
+    background:var(--white-color);
+}
+
+.menu .box-container .box:hover > *{
+    color:var(--black-color);
+}
+
+
 
 
 
